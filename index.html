@@ -20,13 +20,11 @@
 
 
 
-   var station_id = window.location.pathname.split("/")[2];
-   var s_id = station_id.split("-");
-   station_id = s_id[s_id.length -1];
+
 
    branch.setBranchViewData({
       data: {
-         '$deeplink_path':'?profile/' + station_id
+         '$deeplink_path':'?profile/'
       }
    });
   
