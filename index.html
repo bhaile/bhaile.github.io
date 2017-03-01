@@ -16,15 +16,41 @@
 
 (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
 
-   branch.init('key_live_pilLHxFoocAOEAnIpTvvRefeuwoDn1lh', function(err, data) {
+   branch.init('key_live_nfwlg2V4nUnAtIehHW61zafgCAnYnfZV', function(err, data) {
         // callback to handle err or data
     });
 
-   branch.setBranchViewData({
-      data: {
-         '$deeplink_path':'?profile/s45000'
-      }
-   });
+
+if (location.href == "bhaile.github.com") {
+   var shutterfly_campaign = "Burhan-Testing";
+} else if (location.href.includes("/photo-books")) {
+   var shutterfly_campaign = "PB_BRANCH";
+} else if (location.href.includes("/cards-stationery")) {
+   var shutterfly_campaign = "CARDS_BRANCH";
+} else if (location.href.includes("/personalized-gifts")) {
+   var shutterfly_campaign = "PERSG_BRANCH";
+} else if (location.href.includes("/photo-gifts")) {
+   var shutterfly_campaign = "PG_BRANCH";
+} else if (location.href.includes("/statement-gifts")) {
+   var shutterfly_campaign = "SG_BRANCH";
+} else if (location.href.includes("/home-decor")) {
+   var shutterfly_campaign = "HD_BRANCH";
+} else if (location.href.includes("/calendars")) {
+   var shutterfly_campaign = "CAL_BRANCH";
+} else if (location.href.includes("/selectprints")) {
+   var shutterfly_campaign = "PRI_BRANCH";
+} else if (location.href.includes("/special-offers")) {
+   var shutterfly_campaign = "SO_BRANCH";
+} else if (location.href.includes("photos.shutterfly.com")) {
+   var shutterfly_campaign = "PHO_BRANCH";
+};
+
+branch.setBranchViewData({
+  data: {
+     channel: 'SFLY - Internal Website',
+     campaign: shutterfly_campaign
+  }
+});
   
 </script>
     <title>Second by bhaile</title>
