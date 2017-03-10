@@ -20,34 +20,10 @@
     });
 
 
-if (location.href == "bhaile.github.io") {
-   var shutterfly_campaign = "Burhan-Testing";
-} else if (location.href.includes("/photo-books")) {
-   var shutterfly_campaign = "PB_BRANCH";
-} else if (location.href.includes("/cards-stationery")) {
-   var shutterfly_campaign = "CARDS_BRANCH";
-} else if (location.href.includes("/personalized-gifts")) {
-   var shutterfly_campaign = "PERSG_BRANCH";
-} else if (location.href.includes("/photo-gifts")) {
-   var shutterfly_campaign = "PG_BRANCH";
-} else if (location.href.includes("bhaile.github.io")) {
-   var shutterfly_campaign = "Burhan-Working";
-} else if (location.href.includes("/home-decor")) {
-   var shutterfly_campaign = "HD_BRANCH";
-} else if (location.href.includes("/calendars")) {
-   var shutterfly_campaign = "CAL_BRANCH";
-} else if (location.href.includes("/selectprints")) {
-   var shutterfly_campaign = "PRI_BRANCH";
-} else if (location.href.includes("/special-offers")) {
-   var shutterfly_campaign = "SO_BRANCH";
-} else if (location.href.includes("photos.shutterfly.com")) {
-   var shutterfly_campaign = "PHO_BRANCH";
-};
 
 branch.setBranchViewData({
   data: {
-     channel: 'SFLY - Internal Website',
-     campaign: shutterfly_campaign
+
   }
 });
   
