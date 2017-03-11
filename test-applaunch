@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+	<head><meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+					function cta() {
+						window.location = "https://reddit.app.link?$deeplink_path=%2Fr%2FOSHA%2Fcomments%2F5yo1m4%2Fladder_aint_nobody_got_time_for_that%2F";
+					}
+			
+		</script>
+		<a href="#" onclick="cta()"> Lauch the App </a>
+	</body>
+</html>
