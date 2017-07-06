@@ -26,9 +26,7 @@ shutterfly_campaign = 'test_burhan';
 branch.setBranchViewData({
   tags: [shutterfly_campaign],
   channel: 'SFLY - Internal Website',
-      data: {
-          url_referrer: document.referrer
-      }
+  stage: document.referrer,
   });
   
 </script>
